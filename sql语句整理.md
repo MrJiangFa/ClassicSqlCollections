@@ -14,16 +14,16 @@
 
 ```java
 @Select(       
-		"<script>"        
-		+ "select distinct question.id from question,direction where question.id = direction.question and question.difficulty = #{difficulty} and question.type in "        
-		+ "<foreach item='item' index='index' collection='typeList' open='(' separator=',' close=')'>"        
-		+ "#{item}"        
-		+ "</foreach>"        
-		+ "and direction.direction in "        
-		+ "<foreach item='item1' index='index' collection='directionList' open='(' separator=',' close=')'>"        
-		+ "#{item1}"        
-		+ "</foreach>"        
-		+ "</script>")
+	"<script>"        
+	+ "select distinct question.id from question,direction where question.id = direction.question and question.difficulty = #{difficulty} and question.type in "        
+	+ "<foreach item='item' index='index' collection='typeList' open='(' separator=',' close=')'>"        
+	+ "#{item}"        
+	+ "</foreach>"        
+	+ "and direction.direction in "        
+	+ "<foreach item='item1' index='index' collection='directionList' open='(' separator=',' close=')'>"        
+	+ "#{item1}"        
+	+ "</foreach>"        
+	+ "</script>")
 ```
 
 ```java

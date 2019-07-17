@@ -27,7 +27,7 @@
 ```
 
 ```java
-List<Objecgt> getCollectByTypeDifficultDirection(@Param("typeList")List<String> typeList, 											  	 @Param("difficulty")int difficulty,                                                		     			                 @Param("directionList") List<String> directionList);
+List<Objecgt> getCollectByTypeDifficultDirection(@Param("typeList")List<String> typeList, @Param("difficulty")int difficulty,@Param("directionList") List<String> directionList);
 ```
 
 附加：distinct 语句用于区分重复的元素

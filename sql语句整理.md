@@ -4,7 +4,7 @@
 @Select({"select * from", TABLE_NAME, "where datetime<=(select datetime from", TABLE_NAME,"order by datetime desc limit #{firstIdOfPage},1) limit #{pageSize}"})
 ```
 
-描述：以时间进行倒序查找，然后取出排序后的第 firstIdOfPage 语句（即第pageNumber 页的第一条语句，但是存在分页展示重叠的问题，pageSize表示页面尺寸。
+描述：以时间进行倒序查找，然后取出排序后的第 firstIdOfPage 条语句（即第pageNumber 页的第一条语句，但是存在分页展示重叠的问题，pageSize表示页面尺寸。
 
 ------
 
